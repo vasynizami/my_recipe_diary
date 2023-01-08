@@ -31,6 +31,4 @@ mongoose
     console.log(error.message);
   });
 
-// mongoose.set('useFindAndModify', false);
-
 // https://www.mongodb.com/cloud/atlas
