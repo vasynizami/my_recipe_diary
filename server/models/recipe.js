@@ -8,15 +8,9 @@ const recipeSchema = mongoose.Schema({
   serves: { type: String, required: true },
   ingredients: { type: String, required: false },
   instructions: { type: String, required: false },
-  tags: { type: Array, required: false },
   user_id: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user',
-    required: true,
-  },
-  createdAt: {
-    type: Date,
-    default: new Date(),
     required: true,
   },
 });
