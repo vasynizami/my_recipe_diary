@@ -3,12 +3,12 @@ import mongoose from 'mongoose';
 const bookmarkSchema = mongoose.Schema({
   user_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'user',
+    ref: 'User',
     required: true,
   },
   recipe_id: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'recipe',
+    ref: 'Recipe',
     required: true,
   },
   inactive: {
