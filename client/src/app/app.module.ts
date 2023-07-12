@@ -13,7 +13,7 @@ import { RecipesListComponent } from './recipes/recipes-list/recipes-list.compon
 import { RecipesListItemComponent } from './recipes/recipes-list/recipes-list-item/recipes-list-item.component';
 import { RecipeCreateFormComponent } from './recipes/recipe-create-form/recipe-create-form.component';
 import { RecipeEditFormComponent } from './recipes/recipe-edit-form/recipe-edit-form.component';
-import { RecipeViewComponent } from './recipes/recipe-view/recipe-view.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,17 +24,17 @@ import { RecipeViewComponent } from './recipes/recipe-view/recipe-view.component
     AccountMenuComponent,
     SearchComponent,
     FooterComponent,
-    RecipesListComponent,
-    RecipesListItemComponent,
     RecipeCreateFormComponent,
     RecipeEditFormComponent,
-    RecipeViewComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    RecipesListComponent,
+    RecipesListItemComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

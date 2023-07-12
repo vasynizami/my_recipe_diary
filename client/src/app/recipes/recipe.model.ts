@@ -6,4 +6,6 @@ export class Recipe {
   public serves: string | undefined;
   public ingredients!: string;
   public instructions: string | undefined;
+
+  // constructor(name: string, imgIrl: string, )
 }
